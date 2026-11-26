@@ -64,7 +64,7 @@ There are always 10 platforms. When the character rises above a fixed height, th
 
 SFML 2.x is required. On macOS it can be installed with Homebrew (`brew install sfml@2`).
 
-Run these commands inside `project_group19/`:
+Run these commands inside `src/`:
 
 ```bash
 g++ main.cpp -std=c++17 \
@@ -77,7 +77,7 @@ g++ main.cpp -std=c++17 \
 
 ### Font
 
-The font file is not included in this repository because of its license. Before running the game, copy `arial.ttf` into `project_group19/sources/`:
+The font file is not included in this repository because of its license. Before running the game, copy `arial.ttf` into `src/sources/`:
 
 | System | Location of the font |
 |---|---|
@@ -95,18 +95,18 @@ Any other TrueType font also works if it is saved as `sources/arial.ttf`. Withou
 ### Notes
 
 - Compile `main.cpp` only. The classes are fully defined in `Platform.h` and `GameObject.h`.
-- Run the program from `project_group19/`, because images, the font, and the high score are loaded from the relative path `sources/`.
+- Run the program from `src/`, because images, the font, and the high score are loaded from the relative path `sources/`.
 - The build was checked with SFML 2.6.2 on macOS (Apple Silicon).
 
 ## Repository layout
 
 | Path | Contents |
 |---|---|
-| `project_group19/main.cpp` | Game loop, input, scoring, rendering |
-| `project_group19/Platform.h` | Platform classes |
-| `project_group19/GameObject.h` | Rocket and black hole classes |
-| `project_group19/sources/` | Images and high score file |
-| `PD113-1_finalProject_demo_group19/demo_slides_group19.pdf` | Demo slides |
+| `src/main.cpp` | Game loop, input, scoring, rendering |
+| `src/Platform.h` | Platform classes |
+| `src/GameObject.h` | Rocket and black hole classes |
+| `src/sources/` | Images and high score file |
+| `demo_slides.pdf` | Demo slides |
 
 ## Acknowledgements
 
